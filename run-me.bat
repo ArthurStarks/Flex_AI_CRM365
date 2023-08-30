@@ -1,0 +1,2 @@
+python yasminia.py
+pause

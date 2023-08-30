@@ -1,0 +1,388 @@
+[
+    {
+        "label": "openai",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "openai",
+        "description": "openai",
+        "detail": "openai",
+        "documentation": {}
+    },
+    {
+        "label": "chat_gpt_api",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "chat_gpt_api",
+        "description": "chat_gpt_api",
+        "detail": "chat_gpt_api",
+        "documentation": {}
+    },
+    {
+        "label": "consulting_flex_crm_yasminia_prompts",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "consulting_flex_crm_yasminia_prompts",
+        "description": "consulting_flex_crm_yasminia_prompts",
+        "detail": "consulting_flex_crm_yasminia_prompts",
+        "documentation": {}
+    },
+    {
+        "label": "streamlit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "streamlit",
+        "description": "streamlit",
+        "detail": "streamlit",
+        "documentation": {}
+    },
+    {
+        "label": "consulting_flex_crm_yasminia",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "consulting_flex_crm_yasminia",
+        "description": "consulting_flex_crm_yasminia",
+        "detail": "consulting_flex_crm_yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "option_menu",
+        "importPath": "streamlit_option_menu",
+        "description": "streamlit_option_menu",
+        "isExtraImport": true,
+        "detail": "streamlit_option_menu",
+        "documentation": {}
+    },
+    {
+        "label": "prompts",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "prompts",
+        "description": "prompts",
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "basic_generation",
+        "kind": 2,
+        "importPath": "chat_gpt_api",
+        "description": "chat_gpt_api",
+        "peekOfCode": "def basic_generation(user_prompt):\n    completion = openai.ChatCompletion.create(\n        model=selected_model,\n        messages=[\n            {\"role\": \"user\", \"content\": user_prompt}\n        ]\n    )\n    response = completion.choices[0].message.content\n    return response",
+        "detail": "chat_gpt_api",
+        "documentation": {}
+    },
+    {
+        "label": "#openai.api_key",
+        "kind": 5,
+        "importPath": "chat_gpt_api",
+        "description": "chat_gpt_api",
+        "peekOfCode": "#openai.api_key = \"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\"\nopenai.api_key = \"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\"\nselected_model = \"gpt-3.5-turbo\"\n#openai.api_key = \"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\"\n#selected_model = \"gpt-4\"\ndef basic_generation(user_prompt):\n    completion = openai.ChatCompletion.create(\n        model=selected_model,\n        messages=[\n            {\"role\": \"user\", \"content\": user_prompt}",
+        "detail": "chat_gpt_api",
+        "documentation": {}
+    },
+    {
+        "label": "openai.api_key",
+        "kind": 5,
+        "importPath": "chat_gpt_api",
+        "description": "chat_gpt_api",
+        "peekOfCode": "openai.api_key = \"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\"\nselected_model = \"gpt-3.5-turbo\"\n#openai.api_key = \"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\"\n#selected_model = \"gpt-4\"\ndef basic_generation(user_prompt):\n    completion = openai.ChatCompletion.create(\n        model=selected_model,\n        messages=[\n            {\"role\": \"user\", \"content\": user_prompt}\n        ]",
+        "detail": "chat_gpt_api",
+        "documentation": {}
+    },
+    {
+        "label": "selected_model",
+        "kind": 5,
+        "importPath": "chat_gpt_api",
+        "description": "chat_gpt_api",
+        "peekOfCode": "selected_model = \"gpt-3.5-turbo\"\n#openai.api_key = \"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\"\n#selected_model = \"gpt-4\"\ndef basic_generation(user_prompt):\n    completion = openai.ChatCompletion.create(\n        model=selected_model,\n        messages=[\n            {\"role\": \"user\", \"content\": user_prompt}\n        ]\n    )",
+        "detail": "chat_gpt_api",
+        "documentation": {}
+    },
+    {
+        "label": "#openai.api_key",
+        "kind": 5,
+        "importPath": "chat_gpt_api",
+        "description": "chat_gpt_api",
+        "peekOfCode": "#openai.api_key = \"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\"\n#selected_model = \"gpt-4\"\ndef basic_generation(user_prompt):\n    completion = openai.ChatCompletion.create(\n        model=selected_model,\n        messages=[\n            {\"role\": \"user\", \"content\": user_prompt}\n        ]\n    )\n    response = completion.choices[0].message.content",
+        "detail": "chat_gpt_api",
+        "documentation": {}
+    },
+    {
+        "label": "#selected_model",
+        "kind": 5,
+        "importPath": "chat_gpt_api",
+        "description": "chat_gpt_api",
+        "peekOfCode": "#selected_model = \"gpt-4\"\ndef basic_generation(user_prompt):\n    completion = openai.ChatCompletion.create(\n        model=selected_model,\n        messages=[\n            {\"role\": \"user\", \"content\": user_prompt}\n        ]\n    )\n    response = completion.choices[0].message.content\n    return response",
+        "detail": "chat_gpt_api",
+        "documentation": {}
+    },
+    {
+        "label": "modelisation",
+        "kind": 2,
+        "importPath": "consulting_flex_crm_yasminia",
+        "description": "consulting_flex_crm_yasminia",
+        "peekOfCode": "def modelisation():\n    # Step 1: Enter a Topic\n    user_topic = st.text_input(\"Please enter your topic:\")\n    # Step 2: Prepare the statement using user's topic\n    if user_topic:  # Ensure we run this part only when user_topic is entered\n        if hasattr(prr, 'proposition_steps_sujet'):  # Check if 'proposition_steps_sujet' is present in prr\n            etapes = prr.proposition_steps_sujet.format(SUJET_A_TRAITER=user_topic)\n            titles = gpt.basic_generation(etapes)\n            st.write(\"Etapes à suivre :\")\n            st.write(\"----------------\")",
+        "detail": "consulting_flex_crm_yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "proposition_steps_sujet",
+        "kind": 5,
+        "importPath": "consulting_flex_crm_yasminia_prompts",
+        "description": "consulting_flex_crm_yasminia_prompts",
+        "peekOfCode": "proposition_steps_sujet = \"\"\"\nIgnore all previous statements\nAs an crm Expert 365 whith more than 20 years experience, microsoft apps expert with more than 10 years and an logistic expert with more than 20 years experience, \nyou are able to deliver successfull crm consulting audit, development and integration for inventory management de manière optimisée.\nI need you to think about this requirement, to understand the requirements and deliver the best solution and approach \nTu dois reflechir en priorisant : \n01. Penser Out of the Box\n02. Developpement avec librairies à jour de CRM 365 ou Power automate apps etc...\n03. Assure toi d'être cohérent en rapport avec la demande en cours\n04. Propose des solutions payantes que si les implémentations demandent des efforts conséquents",
+        "detail": "consulting_flex_crm_yasminia_prompts",
+        "documentation": {}
+    },
+    {
+        "label": "selected",
+        "kind": 5,
+        "importPath": "Home",
+        "description": "Home",
+        "peekOfCode": "selected = option_menu(\n        menu_title=\"Agent Flex IA\",\n        options=[\"Agent Assistant\", \"Agent Mailing\", \"Agent Fitgap\"],\n        icons=[\"chat-left-dots-fill\", \"magic\",\"robot\"],\n        #menu-icon=\"cast\",\n        orientation=\"horizontal\",\n    )\nif selected == \"Home\" :\n    st.title(f\"Bienvenue au {selected}\")\nif selected == \"Agent Mailing\" :",
+        "detail": "Home",
+        "documentation": {}
+    },
+    {
+        "label": "my_input",
+        "kind": 5,
+        "importPath": "Home",
+        "description": "Home",
+        "peekOfCode": "my_input = st.text_input(\"Que puis-je faire pour vous ?\", st.session_state[\"my_input\"])\nsubmit = st.button(\"Submit\")\nif submit:\n    st.session_state[\"my_input\"] = my_input\n    st.write(\"You have entered: \", my_input)\n# Define the options and their emojis\noptions = {\n    'Daily Task': '🔍',\n    'Last day tasks': '🔍',\n    'Fitgap': '🔍',",
+        "detail": "Home",
+        "documentation": {}
+    },
+    {
+        "label": "submit",
+        "kind": 5,
+        "importPath": "Home",
+        "description": "Home",
+        "peekOfCode": "submit = st.button(\"Submit\")\nif submit:\n    st.session_state[\"my_input\"] = my_input\n    st.write(\"You have entered: \", my_input)\n# Define the options and their emojis\noptions = {\n    'Daily Task': '🔍',\n    'Last day tasks': '🔍',\n    'Fitgap': '🔍',\n    'Modélisation': '📐',",
+        "detail": "Home",
+        "documentation": {}
+    },
+    {
+        "label": "options",
+        "kind": 5,
+        "importPath": "Home",
+        "description": "Home",
+        "peekOfCode": "options = {\n    'Daily Task': '🔍',\n    'Last day tasks': '🔍',\n    'Fitgap': '🔍',\n    'Modélisation': '📐',\n    'Emailing': '📧',\n    'Développement js': '💻',\n    'Développement plugins': '🔌',\n    'Power automate': '⚙️',\n    'Learning CRM 365': '📚',",
+        "detail": "Home",
+        "documentation": {}
+    },
+    {
+        "label": "actions",
+        "kind": 5,
+        "importPath": "Home",
+        "description": "Home",
+        "peekOfCode": "actions = {\n    'Daily Task': ['Action 1', 'Action 2', 'Action 3'],\n    'Last day tasks': ['Action 1', 'Action 2', 'Action 3'],\n    'Fitgap': ['Action 1', 'Action 2', 'Action 3'],\n    'Modélisation': ['Action 1', 'Action 2', 'Action 3'],\n    'Emailing': ['Action 1', 'Action 2', 'Action 3'],\n    'Développement js': ['Action 1', 'Action 2', 'Action 3'],\n    'Développement plugins': ['Action 1', 'Action 2', 'Action 3'],\n    'Power automate': ['Action 1', 'Action 2', 'Action 3'],\n    'Learning CRM 365': ['Action 1', 'Action 2', 'Action 3'],",
+        "detail": "Home",
+        "documentation": {}
+    },
+    {
+        "label": "page",
+        "kind": 5,
+        "importPath": "Home",
+        "description": "Home",
+        "peekOfCode": "page = st.sidebar.radio(\"Que voulez-vous faire ?\", list(options.keys()))\n# Display options in a 2x4 grid on the homepage\nif page == 'Homepage':\n    col1, col2 = st.columns(2)\n    for i, option in enumerate(options):\n        col = col1 if i % 2 == 0 else col2\n        col.button(f\"{options[option]} {option}\")\nelse:\n    st.header(page)\n    action = st.selectbox(\"Choose an action\", actions[page])",
+        "detail": "Home",
+        "documentation": {}
+    },
+    {
+        "label": "#my_input",
+        "kind": 5,
+        "importPath": "Home",
+        "description": "Home",
+        "peekOfCode": "#my_input = st.text_input(\"Que puis-je faire pour vous ?\", st.session_state[\"my_input\"])\n#submit = st.button(\"Submit\")\n# Streamlit app\nst.subheader('Décrivez ce que vous avez fait durant la dernière journée')\nsource_text = st.text_area(\"Entrer votre descriptifs des actions\", height=200)\nsubmit = st.button(\"Valider\")",
+        "detail": "Home",
+        "documentation": {}
+    },
+    {
+        "label": "#submit",
+        "kind": 5,
+        "importPath": "Home",
+        "description": "Home",
+        "peekOfCode": "#submit = st.button(\"Submit\")\n# Streamlit app\nst.subheader('Décrivez ce que vous avez fait durant la dernière journée')\nsource_text = st.text_area(\"Entrer votre descriptifs des actions\", height=200)\nsubmit = st.button(\"Valider\")",
+        "detail": "Home",
+        "documentation": {}
+    },
+    {
+        "label": "source_text",
+        "kind": 5,
+        "importPath": "Home",
+        "description": "Home",
+        "peekOfCode": "source_text = st.text_area(\"Entrer votre descriptifs des actions\", height=200)\nsubmit = st.button(\"Valider\")",
+        "detail": "Home",
+        "documentation": {}
+    },
+    {
+        "label": "submit",
+        "kind": 5,
+        "importPath": "Home",
+        "description": "Home",
+        "peekOfCode": "submit = st.button(\"Valider\")",
+        "detail": "Home",
+        "documentation": {}
+    },
+    {
+        "label": "options",
+        "kind": 5,
+        "importPath": "home_consulting_flex_crm_yasminia",
+        "description": "home_consulting_flex_crm_yasminia",
+        "peekOfCode": "options = {\n    'Fitgap': '🔍',\n    'Modélisation': '📐',\n    'Emailing': '📧',\n    'Développement js': '💻',\n    'Développement plugins': '🔌',\n    'Power automate': '⚙️',\n    'Learning CRM 365': '📚',\n    'Spécifications': '📋',\n}",
+        "detail": "home_consulting_flex_crm_yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "actions",
+        "kind": 5,
+        "importPath": "home_consulting_flex_crm_yasminia",
+        "description": "home_consulting_flex_crm_yasminia",
+        "peekOfCode": "actions = {\n    'Fitgap': ['Action 1', 'Action 2', 'Action 3'],\n    'Modélisation': ['Action 1', 'Action 2', 'Action 3'],\n    'Emailing': ['Action 1', 'Action 2', 'Action 3'],\n    'Développement js': ['Action 1', 'Action 2', 'Action 3'],\n    'Développement plugins': ['Action 1', 'Action 2', 'Action 3'],\n    'Power automate': ['Action 1', 'Action 2', 'Action 3'],\n    'Learning CRM 365': ['Action 1', 'Action 2', 'Action 3'],\n    'Spécifications': ['Action 1', 'Action 2', 'Action 3'],\n}",
+        "detail": "home_consulting_flex_crm_yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "page",
+        "kind": 5,
+        "importPath": "home_consulting_flex_crm_yasminia",
+        "description": "home_consulting_flex_crm_yasminia",
+        "peekOfCode": "page = st.sidebar.radio(\"Que voulez-vous faire ?\", list(options.keys()))\n# Display options in a 2x4 grid on the homepage\nif page == 'Homepage':\n    col1, col2 = st.columns(2)\n    for i, option in enumerate(options):\n        col = col1 if i % 2 == 0 else col2\n        col.button(f\"{options[option]} {option}\")\nelse:\n    st.header(page)\n    action = st.selectbox(\"Choose an action\", actions[page])",
+        "detail": "home_consulting_flex_crm_yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "youtube_title_generator_prompt",
+        "kind": 5,
+        "importPath": "prompts",
+        "description": "prompts",
+        "peekOfCode": "youtube_title_generator_prompt = \"\"\"\\\nI want you to act as a viral YouTube title creator.\nThink of titles that are catchy and attention-grabbing,\nand will encourage people to click and watch the video.\nThe titles should be short, concise, and direct. They should also be creative and clever.\nTry to come up with titles that are unexpected and surprising. Do not use titles that are too generic,\nor titles that have been used too many times before. My video is about {topic}. \"\"\"\nyoutube_thumbmail_generator_prompt = \"\"\"I want you to act as a viral YouTube thumbnail\ncreator. Think of thumbnails that are catchy and attention-grabbing,\nand will encourage people to click and watch the video. I will provide you with 10 Titles, and you will suggest thumbnails for each",
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "youtube_thumbmail_generator_prompt",
+        "kind": 5,
+        "importPath": "prompts",
+        "description": "prompts",
+        "peekOfCode": "youtube_thumbmail_generator_prompt = \"\"\"I want you to act as a viral YouTube thumbnail\ncreator. Think of thumbnails that are catchy and attention-grabbing,\nand will encourage people to click and watch the video. I will provide you with 10 Titles, and you will suggest thumbnails for each\ndescribe what is in the thumbnail very well and be as detailed as you can, so desginers can understnad and create. Here are the titles {user_titles}.\"\"\"\nyoutube_script_generator_prompt = \"\"\"Act as a professional YouTube video script writer\nand create an engaging script for a {minutes} minute video.\nThink outside the box and come up with a creative, witty,\nand captivating script that people would be interested in watching and sharing.\nUtilize techniques to generate more engagement in the narration script. \nCreate a timeline and stick to it for up to {minutes} minutes",
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "youtube_script_generator_prompt",
+        "kind": 5,
+        "importPath": "prompts",
+        "description": "prompts",
+        "peekOfCode": "youtube_script_generator_prompt = \"\"\"Act as a professional YouTube video script writer\nand create an engaging script for a {minutes} minute video.\nThink outside the box and come up with a creative, witty,\nand captivating script that people would be interested in watching and sharing.\nUtilize techniques to generate more engagement in the narration script. \nCreate a timeline and stick to it for up to {minutes} minutes\nof spoken narration.\nTHE Topic IS: [{topic}]\"\"\"\ntweet_from_youtube_prompt = \"\"\"Act as if you're a social media expert. \nGive me a 10 tweet thread based on the follwing youtube transcript: {youtube_transcript}. ",
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "tweet_from_youtube_prompt",
+        "kind": 5,
+        "importPath": "prompts",
+        "description": "prompts",
+        "peekOfCode": "tweet_from_youtube_prompt = \"\"\"Act as if you're a social media expert. \nGive me a 10 tweet thread based on the follwing youtube transcript: {youtube_transcript}. \nThe thread should be optimised for virality and contain \nhashtags and emoticons. Each tweet should not exceed 280 characters in length.\"\"\"",
+        "detail": "prompts",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "x = st.slider(\"Select a value\")\nst.write(x, \"squared is\", x * x)\n#step 1: Enter a Topic\nuser_topic = input(\"Please enter your video topic: \")\nuser_minutes = input(\"Please enter your video length (in minutes): \")\n#step 2: Generate 10 Catchy Title Ideas\ntitles_prompt = pr.youtube_title_generator_prompt.format(topic=user_topic)\ntitles = gpt.basic_generation(titles_prompt)\nprint(\"Titles Ideas: \")\nprint(\"----------------\")",
+        "detail": "yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "user_topic",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "user_topic = input(\"Please enter your video topic: \")\nuser_minutes = input(\"Please enter your video length (in minutes): \")\n#step 2: Generate 10 Catchy Title Ideas\ntitles_prompt = pr.youtube_title_generator_prompt.format(topic=user_topic)\ntitles = gpt.basic_generation(titles_prompt)\nprint(\"Titles Ideas: \")\nprint(\"----------------\")\nprint(titles)\nprint(\"----------------\")\n#st.write(x, \"squared is\", x * x)",
+        "detail": "yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "user_minutes",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "user_minutes = input(\"Please enter your video length (in minutes): \")\n#step 2: Generate 10 Catchy Title Ideas\ntitles_prompt = pr.youtube_title_generator_prompt.format(topic=user_topic)\ntitles = gpt.basic_generation(titles_prompt)\nprint(\"Titles Ideas: \")\nprint(\"----------------\")\nprint(titles)\nprint(\"----------------\")\n#st.write(x, \"squared is\", x * x)\n#step 3: Generate Catchy Thumbnail Ideas",
+        "detail": "yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "titles_prompt",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "titles_prompt = pr.youtube_title_generator_prompt.format(topic=user_topic)\ntitles = gpt.basic_generation(titles_prompt)\nprint(\"Titles Ideas: \")\nprint(\"----------------\")\nprint(titles)\nprint(\"----------------\")\n#st.write(x, \"squared is\", x * x)\n#step 3: Generate Catchy Thumbnail Ideas\nthumbnail_prompt = pr.youtube_thumbmail_generator_prompt.format(user_titles=titles)\nthumbnails = gpt.basic_generation(thumbnail_prompt)",
+        "detail": "yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "titles",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "titles = gpt.basic_generation(titles_prompt)\nprint(\"Titles Ideas: \")\nprint(\"----------------\")\nprint(titles)\nprint(\"----------------\")\n#st.write(x, \"squared is\", x * x)\n#step 3: Generate Catchy Thumbnail Ideas\nthumbnail_prompt = pr.youtube_thumbmail_generator_prompt.format(user_titles=titles)\nthumbnails = gpt.basic_generation(thumbnail_prompt)\nprint(\"Thumbnail Ideas: \")",
+        "detail": "yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "thumbnail_prompt",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "thumbnail_prompt = pr.youtube_thumbmail_generator_prompt.format(user_titles=titles)\nthumbnails = gpt.basic_generation(thumbnail_prompt)\nprint(\"Thumbnail Ideas: \")\nprint(\"----------------\")\nprint(thumbnails)\nprint(\"----------------\")\n#step 4: script\nscript_prompt = pr.youtube_script_generator_prompt.format(minutes=user_minutes,topic=user_topic)\nscript = gpt.basic_generation(script_prompt)\nprint(\"Suggested Script: \")",
+        "detail": "yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "thumbnails",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "thumbnails = gpt.basic_generation(thumbnail_prompt)\nprint(\"Thumbnail Ideas: \")\nprint(\"----------------\")\nprint(thumbnails)\nprint(\"----------------\")\n#step 4: script\nscript_prompt = pr.youtube_script_generator_prompt.format(minutes=user_minutes,topic=user_topic)\nscript = gpt.basic_generation(script_prompt)\nprint(\"Suggested Script: \")\nprint(\"----------------\")",
+        "detail": "yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "script_prompt",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "script_prompt = pr.youtube_script_generator_prompt.format(minutes=user_minutes,topic=user_topic)\nscript = gpt.basic_generation(script_prompt)\nprint(\"Suggested Script: \")\nprint(\"----------------\")\nprint(script)\nprint(\"----------------\")\n#step 5: Into a twitter thread\ntweet_prompt = pr.tweet_from_youtube_prompt.format(youtube_transcript=script)\ntweet = gpt.basic_generation(tweet_prompt)\nprint(\"Twitter Thread: \")",
+        "detail": "yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "script",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "script = gpt.basic_generation(script_prompt)\nprint(\"Suggested Script: \")\nprint(\"----------------\")\nprint(script)\nprint(\"----------------\")\n#step 5: Into a twitter thread\ntweet_prompt = pr.tweet_from_youtube_prompt.format(youtube_transcript=script)\ntweet = gpt.basic_generation(tweet_prompt)\nprint(\"Twitter Thread: \")\nprint(\"----------------\")",
+        "detail": "yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "tweet_prompt",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "tweet_prompt = pr.tweet_from_youtube_prompt.format(youtube_transcript=script)\ntweet = gpt.basic_generation(tweet_prompt)\nprint(\"Twitter Thread: \")\nprint(\"----------------\")\nprint(tweet)\nprint(\"----------------\")",
+        "detail": "yasminia",
+        "documentation": {}
+    },
+    {
+        "label": "tweet",
+        "kind": 5,
+        "importPath": "yasminia",
+        "description": "yasminia",
+        "peekOfCode": "tweet = gpt.basic_generation(tweet_prompt)\nprint(\"Twitter Thread: \")\nprint(\"----------------\")\nprint(tweet)\nprint(\"----------------\")",
+        "detail": "yasminia",
+        "documentation": {}
+    }
+]
