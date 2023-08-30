@@ -3,5 +3,5 @@ aspose_words==23.7.0
 openai==0.27.8
 pandas
 Pillow
-streamlit==1.25.0
+streamlit
 Python >=3.8
