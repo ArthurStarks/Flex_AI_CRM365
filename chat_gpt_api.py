@@ -1,13 +1,16 @@
-# File: chat_gpt_api.py
+import os
 import openai
 
-#openai.api_key = "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"
+# Get the value of the environment variable 'Flex_AI_DailyTask'
+api_key = os.environ.get('Flex_AI_DailyTask')
 
-openai.api_key = "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"
+# Check if the environment variable exists
+if api_key:
+    openai.api_key = api_key
+else:
+    print("The Flex_AI_DailyTask environment variable is not set")
+
 selected_model = "gpt-3.5-turbo"
-
-#openai.api_key = "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"
-#selected_model = "gpt-4"
 
 def basic_generation(user_prompt):
     completion = openai.ChatCompletion.create(
