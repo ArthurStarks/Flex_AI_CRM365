@@ -3,7 +3,7 @@ import openai
 
 #openai.api_key = "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"
 
-openai.api_key = "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"
+openai.api_key = "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"
 selected_model = "gpt-3.5-turbo"
 
 #openai.api_key = "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"
