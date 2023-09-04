@@ -99,28 +99,28 @@ if page == 'Daily Task':
     user_targets = st.text_area("Entrer le contexte :", height=30)
     targets = st.text_area("Entrer les objectifs de la journée", height=350)
     
-        if st.button('Générer les tâches de la journée'):
-        prompt = TargetJournee(client, targets, language, user_targets)
-        st.write(prompt)
+    if st.button('Générer les tâches de la journée'):
+            prompt = TargetJournee(client, targets, language, user_targets)
+            st.write(prompt)
 
         # Add a button to copy the generated text to clipboard
-        if st.button('Copier'):
+    if st.button('Copier'):
             pyperclip.copy(prompt)
             # Display the copied text again to prevent it from disappearing
             st.write(prompt)
 
         # Add a button to send the generated text via email
-        col1, col2 = st.columns(2) # Create two columns for the logos and buttons
-        col1.image("gmail.png", width=50) # Display the gmail logo in the first column
-        col2.image("outlook.png", width=50) # Display the outlook logo in the second column
+    col1, col2 = st.columns(2) # Create two columns for the logos and buttons
+    col1.image("gmail.png", width=50) # Display the gmail logo in the first column
+    col2.image("outlook.png", width=50) # Display the outlook logo in the second column
         
-        if col1.button('Gmail'): # Create a button with Gmail in the first column
+    if col1.button('Gmail'): # Create a button with Gmail in the first column
             sender_email = st.text_input("Entrez votre adresse email Gmail", type="password")
             sender_password = st.text_input("Entrez votre mot de passe Gmail", type="password")
             receiver_email = st.text_input("Entrez l'adresse email du destinataire")
             send_email("Daily Task", prompt, sender_email, sender_password, receiver_email)
         
-        if col2.button('Outlook'): # Create a button with Outlook in the second column
+    if col2.button('Outlook'): # Create a button with Outlook in the second column
             sender_email = st.text_input("Entrez votre adresse email Outlook", type="password")
             sender_password = st.text_input("Entrez votre mot de passe Outlook", type="password")
             receiver_email = st.text_input("Entrez l'adresse email du destinataire")
